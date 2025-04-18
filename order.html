@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordering</title>
+<link rel="stylesheet" href="order.css">
+<script src="order.js"></script>
+<style>
+.button {
+background-color: brown;
+color: white;
+padding: 4px 6px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+margin-left: 10px;
+} 
+.header-container {
+background-color: brown;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="overlay">
+<div class="header-container">
+<a style="font-size: larger; color: white; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); font-size: x-large; font-weight: bolder;">
+Brewed to Inspire, Crafted for You
+</a>
+<div>
+<a class="button" href="content.html">Our Products</a>
+<a class="button" href="SignUp.html">Sign Up</a>
+<a class="button" href="Login.html">Log In</a>
+</div>
+</div>
+<div style="width: 400px;margin: auto;" class="formContainer">
+<div class="prdForm" id="formTemp" style="width: 50%;align-items: center;">
+<h3>Select Your Order</h3>
+<br>
+<label>Origin
+<select name="origin" id="origin" class="origin">
+<option value="brazil" data-price="10">Brazilian</option>
+<option value="colombia" data-price="20">Colombian</option>
+<option value="kenya" data-price="15">Kenyan</option>
+<option value="ethiopia" data-price="5">Ethiopian</option>
+</select>
+</label>
+<label>Weight
+<select name="weight" id="weight" class="weight">
+<option value="quarter" data-price="250">250 g</option>
+<option value="half" data-price="450">500 g</option>
+<option value="kilo" data-price="850">1000 g</option>
+</select>
+</label>
+<label>Grind
+<select name="grind" id="grind" class="grind">
+<option value="coarse" data-price="25">Coarse</option>
+<option value="exCoarse" data-price="35">Extra Coarse</option>
+<option value="fine" data-price="20">Fine</option>
+<option value="exFine" data-price="15">Extra Fine</option>
+</select>
+</label>
+</div>
+<button onclick="addProduct()" class="btnAdd">Add</button>
+</div>
+<div class="pay" id="target" hidden>
+<div class="prdList" id="prdList"></div>
+<div class="total" id="total">Total Price : 0</div>
+<a href="payment.html" class="btnPay">Finish Your Order</a>
+</div>
+</div>
+</div>
+</body>
+</html>

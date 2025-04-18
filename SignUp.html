@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Pics/cupbg.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .header-container {
+            background-color: #382917;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            color: white;
+        }
+
+        .header-container a {
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .button {
+            background-color: #382917;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            margin-left: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            color: aliceblue;
+        }
+
+        .main-title {
+            font-size: 60px;
+            background-color: #382917;
+            border-radius: 8px;
+            padding: 10px 20px;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+            margin-bottom: 40px;
+        }
+
+        form {
+            background-color: rgba(157, 122, 122, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .submit-btn {
+            background-color: #382917;
+            color: white;
+            font-size: x-large;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div style="font-size: x-large; font-weight: bolder; font-family: 'Times New Roman', Times, serif;">Brewed to Inspire, Crafted for You</div>
+        <div>
+            <a class="button" href="products.html">Our Products</a>
+            <a class="button" href="SignUp.html">Sign Up</a>
+            <a class="button" href="Login.html">Log In</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="main-title">Join Our Lane</div>
+        <form>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required>
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" required>
+            </div>
+            <div>
+                <label for="uname">Username</label>
+                <input type="text" id="uname" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" required>
+            </div>
+            <div>
+                <label for="repass">Re-Type Password</label>
+                <input type="password" id="repass" required>
+            </div>
+            <div>
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea id="address" rows="3"></textarea>
+            </div>
+            <div>
+                <label for="source">How did you hear about us?</label>
+                <select id="source">
+                    <option value="Facebook">Facebook</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="Google Ads">Google Ads</option>
+                    <option value="Friend">Friend Recommendation</option>
+                </select>
+            </div>
+            <div style="text-align: center;">
+                <input type="submit" class="submit-btn" value="Sign Up">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

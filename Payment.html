@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Payment
+        </title>
+        <style>
+            .button {
+                background-color: #382917;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: x-large;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+                margin-left: 10px;
+            }
+    
+            .header-container {
+                background-color:#382917;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 40px;
+            }
+            td{
+            text-align: center;
+            font-size: larger;
+            color:aliceblue;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+            font-style: oblique;
+            padding: 10px;
+         }
+         body{
+            background: url(Pics/paymentbg.jpg);
+            background-size: cover;
+            margin: 0;
+         }
+         .main-content{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+         }
+         form{
+            background-color: rgb(119, 80, 80);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 700px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            opacity: 80%;
+
+         }
+         input,select,textarea{
+            width: 100%;
+            border-radius: 5px;
+            padding: 3px;
+         } 
+           
+        </style>
+    </head>
+    <body>
+        <div class="header-container">
+
+            <a style="font-size: larger; color: white; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); font-size: x-large; font-weight: bolder;">
+                Brewed to Inspire, Crafted for You
+            </a>
+            <div>
+                <a class="button" href="products.html">Our Products</a>
+                <a class="button" href="SignUp.html">Sign Up</a>
+                <a class="button" href="Login.html">Log In</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <br>
+            <form action="Payment Done.html">
+                <table border="1" style="color: aliceblue;">
+                    <tr>
+                        <td colspan="3" align="center"> Payment Info </td>
+                    </tr>
+                    <tr>
+                        <td> Full name</td>
+                        <td> <input type="text"></td>
+                    </tr>
+                    <td> Email</td>
+                    <td> <input type="email"></td>
+                    <tr> 
+                        <td> Phone Number</td>
+                        <td> <input type="Number"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"> Delivery Address </td> 
+                        <td> <input type="text" placeholder=" gov"></td> 
+                    </tr>
+                    <tr>
+                        <td> <input type="text" placeholder=" Area"></td>
+                    </tr>
+                    <tr> 
+                        <td> <input type="text" placeholder=" Street"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"> Credit Card Info </td>
+                        <td> <input type="number" placeholder=" Put the 14 numbers"></td>
+                    </tr>
+                    <tr> 
+                        <td> <input type="month" placeholder=" Expiry date"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" pattern="\d{3}" maxlength="3" placeholder="CVV"></td>
+                    </tr>
+                    <tr>
+                        <td> Delivery Notes </td>
+                        <td> <textarea name=" Notes" rows="5" cols="20" placeholder="Any Delivery Notes ?"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="3"> <input type="submit" value="Confirm Payment" style="background-color: #382917;
+                            color: white;
+                            font-size: x-large;
+                            border-radius: 8px;
+                            padding: 10px;
+                            cursor: pointer;
+                            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);"></td>
+                    </tr>                   
+                </table>
+            </form>
+           
+    </body>
+</html>
+ 
